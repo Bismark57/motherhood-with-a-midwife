@@ -1,0 +1,155 @@
+/* Motherhood with a Midwife — warm, calm, trustworthy */
+:root{
+  --cream:#FBF6F0;
+  --paper:#FFFFFF;
+  --ink:#2E2A26;
+  --ink-soft:#5A534C;
+  --plum:#6E3B4E;
+  --plum-deep:#552C3B;
+  --rose:#A85D68;
+  --blush:#F5E7DC;
+  --blush-deep:#EDD9C8;
+  --sage:#7C8B6F;
+  --gold:#C29B40;
+  --line:#E7DACB;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(85,44,59,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--cream);color:var(--ink);
+  font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:17px;line-height:1.65;
+}
+h1,h2,h3,.brand-name{font-family:"Fraunces",Georgia,"Times New Roman",serif;font-weight:600;line-height:1.2;color:var(--plum-deep)}
+h1{font-size:2.35rem;margin:.2em 0 .45em}
+h2{font-size:1.65rem;margin:1.6em 0 .5em}
+h3{font-size:1.2rem;margin:1.3em 0 .4em}
+p{margin:.7em 0}
+a{color:var(--plum);text-decoration:underline;text-underline-offset:3px}
+a:hover{color:var(--rose)}
+img{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* Header */
+header.site{
+  background:var(--cream);border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:20;
+}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{
+  width:44px;height:44px;border-radius:50%;
+  background:radial-gradient(circle at 32% 30%,var(--rose),var(--plum));
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;flex:none;
+}
+.brand-name{font-size:1.28rem;color:var(--plum-deep);line-height:1.1}
+.brand-sub{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+nav.main{display:flex;gap:22px;flex-wrap:wrap}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.98rem;font-weight:500}
+nav.main a:hover{color:var(--plum)}
+
+/* Hero */
+.hero{
+  background:linear-gradient(160deg,var(--blush) 0%,var(--cream) 78%);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{padding:56px 0 48px;max-width:760px}
+.eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;font-weight:600;color:var(--rose)}
+.hero p.lede{font-size:1.16rem;color:var(--ink-soft);max-width:620px}
+.btnrow{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.btn{
+  display:inline-block;padding:13px 24px;border-radius:999px;font-weight:600;
+  text-decoration:none;font-size:1rem;border:2px solid var(--plum);
+}
+.btn-primary{background:var(--plum);color:#fff}
+.btn-primary:hover{background:var(--plum-deep);color:#fff}
+.btn-ghost{background:transparent;color:var(--plum)}
+.btn-ghost:hover{background:var(--blush);color:var(--plum-deep)}
+.btn-youtube{background:#C4302B;border-color:#C4302B;color:#fff}
+.btn-youtube:hover{background:#A52723;color:#fff}
+
+/* Sections and cards */
+section.block{padding:44px 0 8px}
+.section-head{max-width:720px}
+.section-head p{color:var(--ink-soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin:22px 0 10px}
+.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;
+}
+.card .kicker{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage)}
+.card h3{margin:.1em 0 .2em;font-size:1.22rem}
+.card h3 a{color:var(--plum-deep);text-decoration:none}
+.card h3 a:hover{color:var(--rose);text-decoration:underline}
+.card p{color:var(--ink-soft);font-size:.97rem;margin:0}
+.card .go{margin-top:auto;padding-top:10px;font-weight:600}
+.card .go a{text-decoration:none}
+
+/* Article pages */
+article.page{max-width:780px;margin:0 auto;padding:34px 0 10px}
+.crumb{font-size:.88rem;color:var(--ink-soft)}
+.crumb a{text-decoration:none}
+.quick{
+  background:var(--blush);border-left:5px solid var(--gold);
+  border-radius:12px;padding:18px 22px;margin:22px 0;
+}
+.quick strong{color:var(--plum-deep)}
+.video-wrap{
+  position:relative;padding-top:56.25%;border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);margin:24px 0;background:#000;
+}
+.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.redflags{
+  background:#FDF1EC;border:1px solid #EBC9BC;border-left:5px solid #C0563B;
+  border-radius:12px;padding:18px 22px;margin:24px 0;
+}
+.redflags h3{color:#8F3B26;margin-top:.2em}
+.tip{
+  background:#F1F4EC;border:1px solid #D8E0CB;border-left:5px solid var(--sage);
+  border-radius:12px;padding:18px 22px;margin:24px 0;
+}
+.watchnext{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:22px;margin:30px 0;
+}
+.faq details{
+  background:var(--paper);border:1px solid var(--line);border-radius:12px;
+  padding:14px 18px;margin:10px 0;
+}
+.faq summary{font-weight:600;cursor:pointer;color:var(--plum-deep)}
+ul.tight li{margin:.3em 0}
+
+/* Story / about band */
+.band{background:var(--blush);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:48px}
+.band-in{padding:44px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+@media (max-width:760px){.split{grid-template-columns:1fr}}
+
+/* Email + subscribe band */
+.signup{background:var(--plum);color:#F7EDE6;margin-top:48px}
+.signup-in{padding:46px 0;text-align:center}
+.signup h2{color:#fff}
+.signup p{color:#EFDBD2;max-width:560px;margin:0 auto}
+.signup form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.signup input[type=email]{
+  padding:13px 18px;border-radius:999px;border:none;min-width:280px;font-size:1rem;
+}
+.signup button{
+  padding:13px 26px;border-radius:999px;border:none;background:var(--gold);
+  color:#2E2A26;font-weight:700;font-size:1rem;cursor:pointer;
+}
+.signup button:hover{background:#D3AC52}
+.signup .fineprint{font-size:.82rem;color:#D9BBA9;margin-top:14px}
+
+/* Footer */
+footer.site{padding:38px 0 46px;color:var(--ink-soft);font-size:.92rem}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+footer.site h4{font-family:"Fraunces",Georgia,serif;color:var(--plum-deep);margin:.2em 0 .5em;font-size:1.05rem}
+footer.site ul{list-style:none;padding:0;margin:0}
+footer.site li{margin:.35em 0}
+footer.site a{color:var(--ink-soft)}
+.disclaimer{
+  border-top:1px solid var(--line);margin-top:28px;padding-top:18px;font-size:.85rem;color:var(--ink-soft);
+}
